@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+/* body{ for animation navbar
+    height: 1000px;
+} */
+
+/* <!-- ===================HEADER================ --> */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.sticky .logo{
+    color: #111;
+}
+header .logo span{
+    color: #069C54;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+header .navigation li{
+    list-style-type: none;
+    margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+header.sticky .navigation li a{
+    color: #111;
+}
+header .navigation li a:hover{
+    color: #048654;
+}
+.banner{
+    /* position: relative; */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+}
+.banner .content{
+    width: 60%;
+    text-align: center;
+}
+.banner .content h2{
+    font-size: 5em;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    color: #fff;
+}
+.banner .content p{
+    font-size: 1em;
+    color: #fff;
+}
+.btn{
+    border-radius: 30px;
+    font-size: 1em;
+    color: #fff;
+    background: #069C54;
+    display: inline-block;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+.btn:hover{
+    letter-spacing: 5px;
+}
+
+/* <!-- ===================ABOUT SECTION================ --> */
+section{
+    padding: 100px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col-about{
+    flex-basis: 48%;
+}
+.about .col-about p{
+    color: #111;
+}
+.titletext{
+    margin-bottom: 10px;
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titletext span{
+    color: #069C54;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.col-about img{
+    width: 100%;
+}
+
+/* <!-- ===================MENU SECTION================ --> */
+.title .titletext{
+    text-align: center;
+}
+.menu p{
+    color: #111;
+}
+.menu a{
+    cursor: pointer;
+}
+.title p{
+    margin-bottom: 70px;
+    text-align: center;
+}
+.box{
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+.col-menu{
+    flex-basis: 26%;
+    min-width: 200px;
+    margin-bottom: 30px;
+}
+.col-menu img{
+    width: 100%;
+}
+.box h3{
+    font-weight: 400;
+    color: #111;
+}
+.button{
+    text-align: center;
+}
+
+/* <!-- ===================EXPERT SECTION================ --> */
+.expert p{
+    color: #111;
+}
+.col-expert{
+    flex-basis: 22%;
+    min-width: 200px;
+}
+.col-expert img{
+    width: 100%;
+}
+.col-expert h3{
+    font-weight: 400;
+    color: #111;
+    text-align: center;
+    
+}
+
+/* <!-- ===================TESTIMONIAL SECTION================ --> */
+section.testimonials{
+    background: url(images/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+section.testimonials h2.titletext ,p{
+    color: #fff;
+}
+.col-testimonials{
+    text-align: center;
+    padding: 40px 30px;
+    background-color: #fff;
+    cursor: pointer;
+    flex-basis: 25%;
+    border-radius: 10px;
+}
+#green{
+    background-color: #069C54;
+}
+#green p{
+    color: #111;
+}
+#green h3{
+    color: #111;
+}
+.col-testimonials p{
+    font-style: italic;
+    color: #666;
+    margin-bottom: 15px;
+}
+.col-testimonials img{
+    width: 70px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+.col-testimonials h3{
+    font-weight: 600;
+    color: #069C54;
+}
+
+/* <!-- ===================CONTACT SECTION================ --> */
+.contact{
+    background: url(images/bg3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contact .title p{
+    color: #111;
+}
+.contactform{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    max-width: 500px;
+    /* margin-top: 50px; */
+}
+.contactform h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    /* width: 100%; */
+    margin-bottom: 20px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 1em;
+    font-weight: 300;
+    resize: none;
+}
+.contactform .inputbox input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background: #069C54;
+    display: inline-block;
+    border-radius: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* <!-- ===================FOOTER================ --> */
+.footer{
+    padding: 8px 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.footer p{
+    color: #333;
+}
+.footer a{
+    font-weight: 500;
+    color: #069C54;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* <!-- ===================MEDIA QUERIES================ --> */
+@media screen and (max-width: 991px) {
+    header, header.sticky{
+        padding: 10px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigation li {
+       margin-left: 0;
+    }
+    header .navigation li a {
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+    .menutoggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menutoggle.active{
+        background: url(images/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menutoggle{
+        filter: invert(1);
+    }
+    section {
+        padding: 30px;
+    }
+    .banner .content {
+        width: 100%;
+    }
+    .banner .content h2{
+        font-size: 2.8em;
+    }
+    .row .col-about img{
+        margin-top: 20px;
+    }
+    .col-about, .col-expert, .col-menu{
+        flex-basis: 100%;
+    }
+    .col-testimonials {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+  }
+  @media screen and (max-width:480px){
+    .banner .content h2{
+        font-size: 2.1em;
+    }
+  }
+
+
+  /* .ceo{
+    width: ;
+  } */
